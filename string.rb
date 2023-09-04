@@ -32,20 +32,31 @@ puts "12345676".length
 # 文字列のインデックス操作
 str = "abcde"
 puts str[2]
+
+# 指定して上書き
 puts str[2] = "1"
+
 puts str[0..2]
+
+# 0から3文字分指定
 puts str[0,3]
+
 puts "文字列の変換・置き換え"
 puts str2 = "ababab"
+
 # 最初に該当した文字列だけ置き換える
 puts str2.sub(/ab/, "xy")
+
 # 全ての文字列から該当した文字列を全て置き換える
 puts str2.gsub(/ab/, "xy")
 # !をつけると破壊的メソッド(元の変数が変更される)になる
+
 puts "文字列の検索"
 puts "abcds".index("bc")
+
 # 指定文字の削除(一文字ずつ検索して削除する)
 puts "abcde".delete("bc")
+
 # 文字列の行末の削除
 puts "avcde".chop
 
@@ -53,19 +64,25 @@ puts "型変換：文字列の分割、統合"
 # 文字列の分割
 puts "aa bb vv".split
 puts "aa,bb,vv".split(",")
+
 # 文字列の統合
 puts ar = ["aa", "bb", "cc"]
 puts ar.join
 puts ar.join(",")
+
 # 小文字→大文字
 puts "avc".upcase
+
 # 大文字→小文字
 puts "AVC".downcase
+
 # 左右反転
 puts "avc".reverse
+
 # 指定した文字列の切り取り
 puts "avcde".slice(2..3)
+
 # スペースの除去
-puts " abv ".strip
+puts " abv   gh".strip
 
 
